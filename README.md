@@ -1,2 +1,2 @@
-# sugar-humanoid.github.io
+# sugar-humanoid
 
