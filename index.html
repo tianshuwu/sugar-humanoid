@@ -6,110 +6,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SUGAR-Humanoid</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Roboto+Mono" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/index.js"></script>
 </head>
 <body>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title is-1 publication-title">🍬SUGAR: A Scalable Human-Video-Driven
-Generalizable Humanoid Loco-Manipulation
-Learning Framework</h1>
-      <div class="is-size-5 publication-authors">
-        <span class="author-block">
-          <a target="_blank" href="https://tianshuwu.github.io/">Tianshu Wu</a><sup>1*</sup>,
-        </span>
-        <span class="author-block">
-          Xiangqi Kong<sup>2*</sup>,
-        </span>
-        <span class="author-block">
-          <a target="_blank" href="https://yuechen0614.github.io/">Yue Chen</a><sup>1*</sup>,
-        </span>
-        <span class="author-block">
-          Qize Yu<sup>1</sup>,
-        </span>
-        <span class="author-block">
-          <a target="_blank" href="https://alvinyh.github.io/">Hang Ye</a><sup>1</sup>,
-        </span>
-        <span class="author-block">
-          Jia Li<sup>1</sup>,
-        </span>
-        <span class="author-block">
-          <a target="_blank" href="https://cfcs.pku.edu.cn/wangyizhou/">Yizhou Wang</a><sup>1</sup>,
-        </span>
-        <span class="author-block">
-          <a target="_blank" href="https://zsdonghao.github.io/">Hao Dong</a><sup>1,&#x2709</sup>,
-        </span>
-      </div>
+<!-- ========== HERO: Full-screen video background ========== -->
+<section class="hero-video-section">
+  <div class="hero-video-wrapper">
+    <video autoplay muted loop playsinline class="hero-bg-video">
+      <source src="./static/videos/main_demo.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
 
-      <div class="is-size-5 publication-authors">
-        <span class="author-block"><sup>1</sup>Center on Frontiers of Computing Studies, School of Computer Science, Peking University</span><br>
-        <span class="author-block"><sup>2</sup>School of Computer Science and Engineering, Beihang University</span><br>
-        <span class="author-block"><sup>*</sup>Equal Contribution</span>
-        <span class="author-block"><sup>&#x2709</sup>Corresponding Author</span>
-      </div>
+  <!-- Top-right nav links -->
+  <nav class="hero-nav">
+    <a href="" class="hero-nav-link" target="_blank">
+      <span class="icon"><i class="fas fa-file-pdf"></i></span>
+      <span>Paper</span>
+    </a>
+    <a href="https://github.com/tianshuwu/SUGAR" class="hero-nav-link" target="_blank">
+      <span class="icon"><i class="fab fa-github"></i></span>
+      <span>Code</span>
+    </a>
+  </nav>
 
-      <div class="publication-links mt-4">
-        <span class="link-block">
-          <a href=""
-            target="_blank"
-            class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-              <i class="fas fa-file-pdf"></i>
-            </span>
-            <span>Paper</span>
-          </a>
-        </span>
+  <!-- Centered title on video -->
+  <div class="hero-title-block">
+    <h1 class="hero-title">SUGAR</h1>
+    <p class="hero-subtitle">A Scalable Human-Video-Driven Generalizable<br>Humanoid Loco-Manipulation Learning Framework</p>
+  </div>
 
-        <span class="link-block">
-          <a href="https://github.com/tianshuwu/SUGAR"
-            target="_blank"
-            class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>Code</span>
-          </a>
-        </span>
-      </div>
+  <!-- Scroll indicator -->
+  <div class="hero-scroll-hint">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
 
+
+<!-- ========== PAPER INFO ========== -->
+<section class="section paper-info-section">
+  <div class="container is-max-desktop has-text-centered">
+    <h1 class="title is-2 publication-title">
+      SUGAR: A Scalable Human-Video-Driven<br>Generalizable Humanoid Loco-Manipulation<br>Learning Framework
+    </h1>
+
+    <div class="is-size-5 publication-authors mt-4">
+      <span class="author-block">
+        <a target="_blank" href="https://tianshuwu.github.io/">Tianshu Wu</a><sup>1*</sup>,
+      </span>
+      <span class="author-block">
+        Xiangqi Kong<sup>2*</sup>,
+      </span>
+      <span class="author-block">
+        <a target="_blank" href="https://yuechen0614.github.io/">Yue Chen</a><sup>1*</sup>,
+      </span>
+      <br>
+      <span class="author-block">
+        Qize Yu<sup>1</sup>,
+      </span>
+      <span class="author-block">
+        <a target="_blank" href="https://alvinyh.github.io/">Hang Ye</a><sup>1</sup>,
+      </span>
+      <span class="author-block">
+        Jia Li<sup>1</sup>,
+      </span>
+      <span class="author-block">
+        <a target="_blank" href="https://cfcs.pku.edu.cn/wangyizhou/">Yizhou Wang</a><sup>1</sup>,
+      </span>
+      <span class="author-block">
+        <a target="_blank" href="https://zsdonghao.github.io/">Hao Dong</a><sup>1&#x2709;</sup>
+      </span>
+    </div>
+
+    <div class="is-size-6 mt-3 affiliation-block">
+      <span><sup>1</sup>CFCS, School of Computer Science, Peking University</span><br>
+      <span><sup>2</sup>School of Computer Science and Engineering, Beihang University</span><br>
+      <span class="mr-4"><sup>*</sup>Equal Contribution</span>
+      <span><sup>&#x2709;</sup>Corresponding Author</span>
+    </div>
+
+    <!-- Link buttons -->
+    <div class="buttons is-centered mt-5">
+      <a href="" class="button is-dark is-rounded pub-btn" target="_blank">
+        <span class="icon"><i class="fas fa-file-pdf"></i></span>
+        <span>Paper</span>
+      </a>
+      <a href="https://github.com/tianshuwu/SUGAR" class="button is-dark is-rounded pub-btn" target="_blank">
+        <span class="icon"><i class="fab fa-github"></i></span>
+        <span>Code</span>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="section">
+
+<!-- ========== VIDEO + ABSTRACT ========== -->
+<section class="section alt-bg">
   <div class="container">
-    <div class="columns is-centered">
-      
-      <div class="column is-half">
-        <h2 class="title is-3">Video</h2>
-        <div class="content">
-          <video id="main-video" autoplay controls muted loop playsinline width="100%" style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <div class="columns is-variable is-5 video-abstract-row">
+
+      <div class="column is-5 video-abs-col">
+        <h2 class="section-title-tag">Video</h2>
+        <div class="video-abs-media">
+          <video autoplay controls muted loop playsinline>
             <source src="./static/videos/main_demo.mp4" type="video/mp4">
-            "Your browser does not support the video tag.
           </video>
         </div>
       </div>
 
-      <div class="column is-half">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p style="font-size: 1.1rem; line-height: 1.6;">
-Building humanoid robots that perform generalizable whole-body loco-manipulation in the real world remains a fundamental challenge: existing approaches either rely on heavy task-specific reward engineering, rigidly replay reference motions that fail to generalize, or depend on costly teleoperation that limits scalability.
-While human videos capture diverse human behaviors, the motion priors inferred from them are inherently imperfect, suffering from occlusion, contact artifacts, and retargeting errors that render them unsuitable for direct policy learning.
-To this end, we present SUGAR, a data-driven framework that converts diverse human videos into deployable humanoid loco-manipulation skills, without any task-specific reward engineering or reference-motion conditioning at inference.
-          </p>
-          <p style="font-size: 1.1rem;">
+      <div class="column is-7 video-abs-col">
+        <h2 class="section-title-tag">Abstract</h2>
+        <div class="video-abs-text abstract-text has-text-justified">
+          <p>
+            Building humanoid robots that perform generalizable whole-body loco-manipulation in the real world remains a fundamental challenge: existing approaches either rely on heavy task-specific reward engineering, rigidly replay reference motions that fail to generalize, or depend on costly teleoperation that limits scalability.
+            While human videos capture diverse human behaviors, the motion priors inferred from them are inherently imperfect, suffering from occlusion, contact artifacts, and retargeting errors that render them unsuitable for direct policy learning.
+            To this end, we present <strong>SUGAR</strong>, a data-driven framework that converts diverse human videos into deployable humanoid loco-manipulation skills, without any task-specific reward engineering or reference-motion conditioning at inference.
           </p>
         </div>
       </div>
@@ -118,139 +136,174 @@ To this end, we present SUGAR, a data-driven framework that converts diverse hum
   </div>
 </section>
 
+
+<!-- ========== METHOD OVERVIEW ========== -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Method Overview</h2>
-    
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <div class="has-text-centered">
-          <img src="./static/images/pipeline.png" 
-               alt="SUGAR Method Overview" 
-               style="width: 100%; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-        </div>
-        
-        <div class="content has-text-justified mt-4">
-          <p style="font-size: 1.05rem; line-height: 1.6;">
-            <strong>SUGAR</strong> consists of three stages: (1) extracting kinematic interaction priors from unstructured human videos through a fully automated pipeline; (2) refining the priors into physically feasible skills with a privileged RL policy; and (3) training a hierarchical autonomous policy on the refined demonstrations for robust humanoid locomanipulation.
-          </p>
-        </div>
-      </div>
+    <h2 class="section-title-tag">Method Overview</h2>
+    <div class="has-text-centered mt-4">
+      <img src="./static/images/pipeline.png"
+           alt="SUGAR Method Overview"
+           style="width: 100%; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.12);">
+    </div>
+    <div class="content mt-4 abstract-text">
+      <p>
+        <strong>SUGAR</strong> consists of three stages: (1) extracting kinematic interaction priors from unstructured human videos through a fully automated pipeline; (2) refining the priors into physically feasible skills with a privileged RL policy; and (3) training a hierarchical autonomous policy on the refined demonstrations for robust humanoid loco-manipulation.
+      </p>
     </div>
   </div>
 </section>
 
-<section class="section">
+
+<!-- ========== REAL-WORLD RESULTS ========== -->
+<section class="section alt-bg">
   <div class="container">
-    <h2 class="title is-3 has-text-centered">Real-World Experimental Results</h2>
-    
-    <div class="task-container">
-      <h3 class="is-size-5 has-text-centered mb-2">Carry Box</h3>
-      <div class="columns is-centered">
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/carry_box_1.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/carry_box_2.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/carry_box_3.mp4" style="border-radius: 8px; width: 100%;"></video></div>
+    <h2 class="section-title-tag has-text-centered">Real-World Experimental Results</h2>
+
+    <div class="task-block mt-6">
+      <h3 class="task-label">Carry Box</h3>
+      <div class="video-row three-col">
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/carry_box_1.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/carry_box_2.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/carry_box_3.mp4" type="video/mp4"></video>
+        </div>
       </div>
     </div>
 
-    <div class="task-container mt-5">
-      <h3 class="is-size-5 has-text-centered mb-2">Kick Box</h3>
-      <div class="columns is-centered">
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/kick_box_1.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/kick_box_2.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/kick_box_3.mp4" style="border-radius: 8px; width: 100%;"></video></div>
+    <div class="task-block mt-5">
+      <h3 class="task-label">Kick Box</h3>
+      <div class="video-row three-col">
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/kick_box_1.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/kick_box_2.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/kick_box_3.mp4" type="video/mp4"></video>
+        </div>
       </div>
     </div>
 
-    <div class="task-container mt-5">
-      <h3 class="is-size-5 has-text-centered mb-2">Pick Bottle</h3>
-      <div class="columns is-centered">
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/pick_bottle_1.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/pick_bottle_2.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/pick_bottle_3.mp4" style="border-radius: 8px; width: 100%;"></video></div>
+    <div class="task-block mt-5">
+      <h3 class="task-label">Pick Bottle</h3>
+      <div class="video-row three-col">
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/pick_bottle_1.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/pick_bottle_2.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/pick_bottle_3.mp4" type="video/mp4"></video>
+        </div>
       </div>
     </div>
 
-    <div class="task-container mt-5">
-      <h3 class="is-size-5 has-text-centered mb-2">Sit Chair</h3>
-      <div class="columns is-centered">
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/sit_chair_2.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/sit_chair_3.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/sit_chair_4.mp4" style="border-radius: 8px; width: 100%;"></video></div>
+    <div class="task-block mt-5">
+      <h3 class="task-label">Sit Chair</h3>
+      <div class="video-row three-col">
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/sit_chair_2.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/sit_chair_3.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-cell">
+          <video autoplay loop muted playsinline><source src="./static/videos/sit_chair_4.mp4" type="video/mp4"></video>
+        </div>
       </div>
     </div>
-
 
     <div class="columns is-centered mt-5">
       <div class="column is-8">
-        <h3 class="is-size-5 has-text-centered mb-2">Stand Bottle</h3>
-        <div class="columns">
-          <div class="column"><video autoplay loop muted playsinline src="./static/videos/stand_bottle_1.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-          <div class="column"><video autoplay loop muted playsinline src="./static/videos/stand_bottle_2.mp4" style="border-radius: 8px; width: 100%;"></video></div>
+        <h3 class="task-label">Stand Bottle</h3>
+        <div class="video-row two-col">
+          <div class="video-cell">
+            <video autoplay loop muted playsinline><source src="./static/videos/stand_bottle_1.mp4" type="video/mp4"></video>
+          </div>
+          <div class="video-cell">
+            <video autoplay loop muted playsinline><source src="./static/videos/stand_bottle_2.mp4" type="video/mp4"></video>
+          </div>
         </div>
       </div>
       <div class="column is-4">
-        <h3 class="is-size-5 has-text-centered mb-2">Push Box</h3>
-        <video autoplay loop muted playsinline src="./static/videos/push_box_1.mp4" style="border-radius: 8px; width: 100%;"></video>
+        <h3 class="task-label">Push Box</h3>
+        <video autoplay loop muted playsinline class="single-video">
+          <source src="./static/videos/push_box_1.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
   </div>
 </section>
 
+
+<!-- ========== ROBUSTNESS ========== -->
 <section class="section">
-  <div class="container">
-    <h2 class="title is-3 has-text-centered">Robust Closed-Loop Execution & Autonomous Recovery</h2>
-    <p class="subtitle is-5 has-text-centered">
-      Our method ensures stable long-horizon interaction even under significant external perturbations and resumes tasks seamlessly after unexpected failures.
+  <div class="container is-max-desktop">
+    <h2 class="section-title-tag has-text-centered">Robust Closed-Loop Execution &amp; Autonomous Recovery</h2>
+    <p class="has-text-centered mt-3 mb-5 section-desc">
+      Our method ensures stable long-horizon interaction even under significant external perturbations<br>and resumes tasks seamlessly after unexpected failures.
     </p>
-    
-    <div class="task-container">
-      <div class="columns is-centered">
-        
-        <div class="column is-half">
-          <div class="content">
-            <h3 class="is-size-5 has-text-centered mb-2">Failure Recovery</h3>
-            <video autoplay loop muted playsinline src="./static/videos/failure_recovery.mp4" style="border-radius: 8px; width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"></video>
-          </div>
-        </div>
 
-        <div class="column is-half">
-          <div class="content">
-            <h3 class="is-size-5 has-text-centered mb-2">Closed-Loop Execution</h3>
-            <video autoplay loop muted playsinline src="./static/videos/closed_loop_execution.mp4" style="border-radius: 8px; width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"></video>
-          </div>
-        </div>
-
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h3 class="task-label has-text-centered">Failure Recovery</h3>
+        <video autoplay loop muted playsinline class="single-video">
+          <source src="./static/videos/failure_recovery.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-half">
+        <h3 class="task-label has-text-centered">Closed-Loop Execution</h3>
+        <video autoplay loop muted playsinline class="single-video">
+          <source src="./static/videos/closed_loop_execution.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2 class="title is-3 has-text-centered">Our method achieves zero-shot generalization to unseen objects within the same categories.</h2>
-    
-    <div class="task-container">
-      <div class="columns is-centered">
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/carry_box_novelobj.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/sit_chair_novelobj_white.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/sit_chair_novelobj_black.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-        <div class="column"><video autoplay loop muted playsinline src="./static/videos/kick_box_novelobj.mp4" style="border-radius: 8px; width: 100%;"></video></div>
-      </div>
-    </div>
-
   </div>
 </section>
 
 
-
-<footer class="footer">
+<!-- ========== ZERO-SHOT GENERALIZATION ========== -->
+<section class="section alt-bg">
   <div class="container">
-    <div class="content has-text-centered">
-      <p>Page template borrowed from BeyondMimic</p>
+    <h2 class="section-title-tag has-text-centered">Zero-Shot Generalization to Unseen Objects</h2>
+    <p class="has-text-centered mt-3 mb-5 section-desc">
+      Our method achieves zero-shot generalization to unseen objects within the same categories.
+    </p>
+
+    <div class="video-row four-col">
+      <div class="video-cell">
+        <video autoplay loop muted playsinline><source src="./static/videos/carry_box_novelobj.mp4" type="video/mp4"></video>
+        <p class="video-caption">Carry Box</p>
+      </div>
+      <div class="video-cell">
+        <video autoplay loop muted playsinline><source src="./static/videos/sit_chair_novelobj_white.mp4" type="video/mp4"></video>
+        <p class="video-caption">Sit Chair (White)</p>
+      </div>
+      <div class="video-cell">
+        <video autoplay loop muted playsinline><source src="./static/videos/sit_chair_novelobj_black.mp4" type="video/mp4"></video>
+        <p class="video-caption">Sit Chair (Black)</p>
+      </div>
+      <div class="video-cell">
+        <video autoplay loop muted playsinline><source src="./static/videos/kick_box_novelobj.mp4" type="video/mp4"></video>
+        <p class="video-caption">Kick Box</p>
+      </div>
     </div>
+  </div>
+</section>
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer dark-footer">
+  <div class="container has-text-centered">
+    <p>Page template inspired by <a href="https://viral-humanoid.github.io/" target="_blank">VIRAL Humanoid</a>.</p>
   </div>
 </footer>
 
